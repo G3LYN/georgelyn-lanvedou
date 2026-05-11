@@ -4,7 +4,28 @@
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
+.hero-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* rend la photo ronde */
+  border: 3px solid #00ff99;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 body {
   background: #0f0f0f;
   color: white;
